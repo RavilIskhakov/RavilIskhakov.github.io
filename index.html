@@ -627,8 +627,12 @@ h4{font-family:var(--display);font-weight:500;font-size:18.5px;line-height:1.3;l
   .banner{left:50%;top:46%}
   .stage.playing .hud-sm{display:none}
   .case-body{grid-template-columns:minmax(0,1fr)}
-  .case-body>.case-text,.case.flip .case-text{order:2}
-  .case-body>.viewer{order:1}
+  /* phones: title, then the demo / video, then the rest of the text */
+  .case-body{row-gap:18px}
+  .case-text{display:contents}
+  .case-text>*{order:3;min-width:0}
+  .case-text>h3{order:1}
+  .case-body>.viewer{order:2;margin-bottom:6px}
   .case.flip .case-body{grid-template-columns:minmax(0,1fr)}
   .contact{grid-template-columns:minmax(0,1fr)}
   .edu{grid-template-columns:minmax(0,1fr)}
