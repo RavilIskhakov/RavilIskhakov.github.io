@@ -866,7 +866,28 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
   </div>
 
   <div class="cases">
-    <article class="case">
+    <article class="case" id="boeHorses" style="--acc:var(--ir);--acc-soft:var(--ir-soft)">
+      <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">boe_horses</span><span class="tag"><span data-l="ru">СиДжиФэктори · 2025 · «Рождение империи»</span><span data-l="en">CGF · 2025 · Birth of an Empire</span></span></div>
+      <div class="case-body">
+        <div class="case-text">
+          <h3><span data-l="ru">Мокап коней и солдат для «Рождения империи»</span><span data-l="en">Horse and soldier mocap for Birth of an Empire</span></h3>
+          <p><span data-l="ru"><b>Кони.</b> Коней для массовки на мокап-стейдже не снимали. Я сделал безмаркерный мокап лошадей по обычному видео: своя сеть ключевых точек, свой 3D-солвер и перенос на риг лошади. Готовый ретаргет вроде HumanIK работает только с двуногими, поэтому ретаргет на четвероногих сделан моим Python-инструментом.</span><span data-l="en"><b>Horses.</b> The crowd's horses were never captured on a mocap stage. I built markerless horse mocap from ordinary video: my own keypoint network, my own 3D solver and transfer onto the horse rig. Off-the-shelf retargeting such as HumanIK only handles bipeds, so retargeting onto quadrupeds runs on my own Python tool.</span></p>
+          <p><span data-l="ru">Проверка на открытых данных против оптического мокапа: ошибка углов суставов ног 5,5° с двух камер, скольжение копыт 12,7 → 2,3 см.</span><span data-l="en">Checked against optical mocap on open data: leg joint angle error 5.5° with two cameras, hoof sliding 12.7 → 2.3 cm.</span></p>
+          <p><span data-l="ru"><b>Солдаты.</b> Безмаркерный мокап по видео с нескольких камер, перенесён на риги солдат фильма тем же инструментом.</span><span data-l="en"><b>Soldiers.</b> Markerless mocap from multi-camera video, retargeted onto the film soldier rigs with the same tool.</span></p>
+          <p class="paper"><a data-l="ru" href="horse_mocap_paper_RU.pdf" target="_blank" rel="noopener"><span class="pdf">PDF</span>Технический отчёт «От видео к ригу» · 6 страниц ↗</a><a data-l="en" href="horse_mocap_paper_EN.pdf" target="_blank" rel="noopener"><span class="pdf">PDF</span>Technical report “From Video to Rig” · 5 pages ↗</a><a class="alt" data-l="ru" href="horse_mocap_paper_EN.pdf" target="_blank" rel="noopener">English version</a><a class="alt" data-l="en" href="horse_mocap_paper_RU.pdf" target="_blank" rel="noopener">Русская версия</a></p>
+          <dl class="meta">
+            <div><dt><span data-l="ru">Роль</span><span data-l="en">Role</span></dt><dd>Lead Technical Artist</dd></div>
+          </dl>
+        </div>
+        <div class="viewer">
+          <div class="vbar"><span><span data-l="ru">boe_case · массовка, кони, солдаты</span><span data-l="en">boe_case · crowd, horses, soldiers</span></span></div>
+          <div class="pet-media" style="aspect-ratio:1920/900"><video class="pet-vid" muted loop playsinline preload="none" poster="boe_case_poster.jpg" data-src="boe_case.mp4" aria-label="Birth of an Empire reel: crowd shots from the film, horse mocap from ordinary video, soldier mocap on the film rig"></video>
+            <button type="button" class="pet-play" aria-label="Play / pause"></button></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case flip">
       <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">soulslike_aa</span><span class="tag"><span data-l="ru">AA-студия · NDA · 2026</span><span data-l="en">AA studio · NDA · 2026</span></span></div>
       <div class="case-body">
         <div class="case-text">
@@ -902,7 +923,7 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
     </article>
 
 
-    <article class="case flip" id="footContact" style="--acc:#7fd4ff;--acc-soft:color-mix(in srgb,var(--acc) 14%,transparent)">
+    <article class="case" id="footContact" style="--acc:#7fd4ff;--acc-soft:color-mix(in srgb,var(--acc) 14%,transparent)">
       <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">foot_contact_cleanup</span><span class="tag"><span data-l="ru">пет-проект · 2026</span><span data-l="en">pet project · 2026</span></span></div>
       <div class="case-body">
         <div class="case-text">
@@ -938,7 +959,7 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
       </div>
     </article>
 
-    <article class="case">
+    <article class="case flip">
       <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">retarget_tool</span><span class="tag"><span data-l="ru">СиДжиФэктори · 2025 · «Рождение империи»</span><span data-l="en">CGF · 2025 · Birth of an Empire</span></span></div>
       <div class="case-body">
         <div class="case-text">
@@ -968,7 +989,7 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
       </div>
     </article>
 
-    <article class="case flip">
+    <article class="case">
       <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">facial_mocap_pipeline</span><span class="tag"><span data-l="ru">СиДжиФэктори · 2025–2026</span><span data-l="en">CGF · 2025–2026</span></span></div>
       <div class="case-body">
         <div class="case-text">
@@ -995,21 +1016,6 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
       </div>
     </article>
 
-    <article class="case" id="boeHorses" style="--acc:var(--ir);--acc-soft:var(--ir-soft)">
-      <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">boe_horses</span><span class="tag"><span data-l="ru">СиДжиФэктори · 2025 · «Рождение империи»</span><span data-l="en">CGF · 2025 · Birth of an Empire</span></span></div>
-      <div class="case-body" style="grid-template-columns:minmax(0,1fr)">
-        <div class="case-text">
-          <h3><span data-l="ru">Мокап коней и солдат для «Рождения империи»</span><span data-l="en">Horse and soldier mocap for Birth of an Empire</span></h3>
-          <p><span data-l="ru"><b>Кони.</b> Коней для массовки на мокап-стейдже не снимали. Я сделал безмаркерный мокап лошадей по обычному видео: своя сеть ключевых точек, свой 3D-солвер и перенос на риг лошади. Готовый ретаргет вроде HumanIK работает только с двуногими, поэтому ретаргет на четвероногих сделан моим Python-инструментом.</span><span data-l="en"><b>Horses.</b> The crowd's horses were never captured on a mocap stage. I built markerless horse mocap from ordinary video: my own keypoint network, my own 3D solver and transfer onto the horse rig. Off-the-shelf retargeting such as HumanIK only handles bipeds, so retargeting onto quadrupeds runs on my own Python tool.</span></p>
-          <p><span data-l="ru">Проверка на открытых данных против оптического мокапа: ошибка углов суставов ног 5,5° с двух камер, скольжение копыт 12,7 → 2,3 см.</span><span data-l="en">Checked against optical mocap on open data: leg joint angle error 5.5° with two cameras, hoof sliding 12.7 → 2.3 cm.</span></p>
-          <p><span data-l="ru"><b>Солдаты.</b> Безмаркерный мокап по видео с нескольких камер, перенесён на риги солдат фильма тем же инструментом.</span><span data-l="en"><b>Soldiers.</b> Markerless mocap from multi-camera video, retargeted onto the film soldier rigs with the same tool.</span></p>
-          <p class="paper"><a data-l="ru" href="horse_mocap_paper_RU.pdf" target="_blank" rel="noopener"><span class="pdf">PDF</span>Технический отчёт «От видео к ригу» · 6 страниц ↗</a><a data-l="en" href="horse_mocap_paper_EN.pdf" target="_blank" rel="noopener"><span class="pdf">PDF</span>Technical report “From Video to Rig” · 5 pages ↗</a><a class="alt" data-l="ru" href="horse_mocap_paper_EN.pdf" target="_blank" rel="noopener">English version</a><a class="alt" data-l="en" href="horse_mocap_paper_RU.pdf" target="_blank" rel="noopener">Русская версия</a></p>
-          <dl class="meta">
-            <div><dt><span data-l="ru">Роль</span><span data-l="en">Role</span></dt><dd>Lead Technical Artist</dd></div>
-          </dl>
-        </div>
-      </div>
-    </article>
   </div>
 </section>
 
