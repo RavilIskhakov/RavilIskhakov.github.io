@@ -887,6 +887,36 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
       </div>
     </article>
 
+    <article class="case flip">
+      <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">retarget_tool</span><span class="tag"><span data-l="ru">СиДжиФэктори · 2025 · «Рождение империи»</span><span data-l="en">CGF · 2025 · Birth of an Empire</span></span></div>
+      <div class="case-body">
+        <div class="case-text">
+          <h3><span data-l="ru">Ретаргет на четвероногих</span><span data-l="en">Retargeting onto quadrupeds</span></h3>
+          <p><span data-l="ru">Готовые решения для ретаргета, такие как HumanIK, рассчитаны на двуногих, поэтому для четвероногих и персонажей-солдат анимацию готовили вручную: на трёх персонажей уходило около двух недель. Я написал свой инструмент ретаргета на Python, и та же работа стала занимать около трёх часов. Перенос анимации из Maya в Unreal Engine тоже автоматизирован.</span><span data-l="en">Off-the-shelf retargeting such as HumanIK is built for bipeds, so animation for the quadrupeds and soldier characters was prepared by hand: about two weeks for three characters. I wrote my own Python retargeting tool, and the same work now takes about three hours. Animation transfer from Maya to Unreal Engine is automated as well.</span></p>
+          <div class="compare" role="img" aria-label="By hand: about two weeks. Tool: about 3 hours.">
+            <div class="cmp-row"><span><span data-l="ru">Вручную</span><span data-l="en">By hand</span></span><div class="cmp-bar"><i style="width:100%"></i></div><span class="cmp-val"><span data-l="ru">≈ 2 недели</span><span data-l="en">≈ 2 weeks</span></span></div>
+            <div class="cmp-row"><span><span data-l="ru">Инструмент</span><span data-l="en">Tool</span></span><div class="cmp-bar scan"><i class="k" style="width:3.75%"></i></div><span class="cmp-val"><span data-l="ru">≈ 3 часа</span><span data-l="en">≈ 3 hours</span></span></div>
+          </div>
+          <ul class="facts">
+            <li><span data-l="ru">Сопоставление костей вручную: выбираешь пары «источник → цель», остальное делает тул</span><span data-l="en">Manual bone mapping: pick source → target pairs, the tool does the rest</span></li>
+            <li><span data-l="ru">Констрейнты по выбранным парам и запекание на целевой скелет для всех клипов за один запуск</span><span data-l="en">Constraints from the chosen pairs, then baking onto the target skeleton for every clip in one run</span></li>
+            <li><span data-l="ru">Работает с нестандартными скелетами, в том числе с четвероногими</span><span data-l="en">Works with non-standard skeletons, quadrupeds included</span></li>
+            <li><span data-l="ru">Автоматический перенос анимации из Maya в Unreal Engine</span><span data-l="en">Automated animation transfer from Maya to Unreal Engine</span></li>
+          </ul>
+          <dl class="meta">
+            <div><dt><span data-l="ru">Стек</span><span data-l="en">Stack</span></dt><dd>Python · Maya · UE5</dd></div>
+            <div><dt><span data-l="ru">Видео</span><span data-l="en">Video</span></dt><dd><a href="#boeHorses"><span data-l="ru">в кейсе «Рождение империи» ↑</span><span data-l="en">in the Birth of an Empire case ↑</span></a></dd></div>
+          </dl>
+        </div>
+        <div class="viewer">
+          <div class="vbar"><span>retarget_tool · source → target · bake</span><span class="live"><span class="rec" aria-hidden="true"></span>LIVE</span></div>
+          <canvas class="vcv" id="retCv" aria-label="Retargeting demo: a mocap skeleton drives a stylised character with different proportions"></canvas>
+          <div class="vlab" style="left:12px"><b>SOURCE · mocap</b>jog fwd · left · right · idle</div>
+          <div class="vlab" style="right:12px;text-align:right"><b>TARGET · hero_toon</b><span data-l="ru">ноги ×0.55 · без проскальзывания</span><span data-l="en">legs ×0.55 · no foot sliding</span></div>
+        </div>
+      </div>
+    </article>
+
     <article class="case pet" style="--acc:#ffb4a3;--acc-soft:color-mix(in srgb,var(--acc) 14%,transparent)">
       <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">horse_mocap</span><span class="tag"><span data-l="ru">СиДжиФэктори · 2025 · «Рождение империи»</span><span data-l="en">CGF · 2025 · Birth of an Empire</span></span></div>
       <div class="case-body">
@@ -963,7 +993,7 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
       </div>
     </article>
 
-    <article class="case flip">
+    <article class="case">
       <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">soulslike_aa</span><span class="tag"><span data-l="ru">AA-студия · NDA · 2026</span><span data-l="en">AA studio · NDA · 2026</span></span></div>
       <div class="case-body">
         <div class="case-text">
@@ -999,7 +1029,7 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
     </article>
 
 
-    <article class="case" id="footContact" style="--acc:#7fd4ff;--acc-soft:color-mix(in srgb,var(--acc) 14%,transparent)">
+    <article class="case flip" id="footContact" style="--acc:#7fd4ff;--acc-soft:color-mix(in srgb,var(--acc) 14%,transparent)">
       <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">foot_contact_cleanup</span><span class="tag"><span data-l="ru">пет-проект · 2026</span><span data-l="en">pet project · 2026</span></span></div>
       <div class="case-body">
         <div class="case-text">
@@ -1035,35 +1065,6 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
       </div>
     </article>
 
-    <article class="case flip">
-      <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">retarget_tool</span><span class="tag"><span data-l="ru">СиДжиФэктори · 2025 · «Рождение империи»</span><span data-l="en">CGF · 2025 · Birth of an Empire</span></span></div>
-      <div class="case-body">
-        <div class="case-text">
-          <h3><span data-l="ru">Ретаргет на четвероногих</span><span data-l="en">Retargeting onto quadrupeds</span></h3>
-          <p><span data-l="ru">Готовые решения для ретаргета, такие как HumanIK, рассчитаны на двуногих, поэтому для четвероногих и персонажей-солдат анимацию готовили вручную: на трёх персонажей уходило около двух недель. Я написал свой инструмент ретаргета на Python, и та же работа стала занимать около трёх часов. Перенос анимации из Maya в Unreal Engine тоже автоматизирован.</span><span data-l="en">Off-the-shelf retargeting such as HumanIK is built for bipeds, so animation for the quadrupeds and soldier characters was prepared by hand: about two weeks for three characters. I wrote my own Python retargeting tool, and the same work now takes about three hours. Animation transfer from Maya to Unreal Engine is automated as well.</span></p>
-          <div class="compare" role="img" aria-label="By hand: about two weeks. Tool: about 3 hours.">
-            <div class="cmp-row"><span><span data-l="ru">Вручную</span><span data-l="en">By hand</span></span><div class="cmp-bar"><i style="width:100%"></i></div><span class="cmp-val"><span data-l="ru">≈ 2 недели</span><span data-l="en">≈ 2 weeks</span></span></div>
-            <div class="cmp-row"><span><span data-l="ru">Инструмент</span><span data-l="en">Tool</span></span><div class="cmp-bar scan"><i class="k" style="width:3.75%"></i></div><span class="cmp-val"><span data-l="ru">≈ 3 часа</span><span data-l="en">≈ 3 hours</span></span></div>
-          </div>
-          <ul class="facts">
-            <li><span data-l="ru">Сопоставление костей вручную: выбираешь пары «источник → цель», остальное делает тул</span><span data-l="en">Manual bone mapping: pick source → target pairs, the tool does the rest</span></li>
-            <li><span data-l="ru">Констрейнты по выбранным парам и запекание на целевой скелет для всех клипов за один запуск</span><span data-l="en">Constraints from the chosen pairs, then baking onto the target skeleton for every clip in one run</span></li>
-            <li><span data-l="ru">Работает с нестандартными скелетами, в том числе с четвероногими</span><span data-l="en">Works with non-standard skeletons, quadrupeds included</span></li>
-            <li><span data-l="ru">Автоматический перенос анимации из Maya в Unreal Engine</span><span data-l="en">Automated animation transfer from Maya to Unreal Engine</span></li>
-          </ul>
-          <dl class="meta">
-            <div><dt><span data-l="ru">Стек</span><span data-l="en">Stack</span></dt><dd>Python · Maya · UE5</dd></div>
-            <div><dt><span data-l="ru">Видео</span><span data-l="en">Video</span></dt><dd><span data-l="ru">материалы проекта — после релиза</span><span data-l="en">project footage after release</span></dd></div>
-          </dl>
-        </div>
-        <div class="viewer">
-          <div class="vbar"><span>retarget_tool · source → target · bake</span><span class="live"><span class="rec" aria-hidden="true"></span>LIVE</span></div>
-          <canvas class="vcv" id="retCv" aria-label="Retargeting demo: a mocap skeleton drives a stylised character with different proportions"></canvas>
-          <div class="vlab" style="left:12px"><b>SOURCE · mocap</b>jog fwd · left · right · idle</div>
-          <div class="vlab" style="right:12px;text-align:right"><b>TARGET · hero_toon</b><span data-l="ru">ноги ×0.55 · без проскальзывания</span><span data-l="en">legs ×0.55 · no foot sliding</span></div>
-        </div>
-      </div>
-    </article>
 
     <article class="case">
       <div class="case-bar"><span class="kd" aria-hidden="true"></span><span class="node">facial_mocap_pipeline</span><span class="tag"><span data-l="ru">СиДжиФэктори · 2025–2026</span><span data-l="en">CGF · 2025–2026</span></span></div>
