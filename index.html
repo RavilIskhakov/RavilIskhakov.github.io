@@ -667,7 +667,9 @@ h4{font-family:var(--display);font-weight:500;font-size:18.5px;line-height:1.3;l
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .cmp-row{grid-template-columns:84px minmax(0,1fr) 72px;gap:10px;font-size:13px}
   .crow{grid-template-columns:minmax(0,1fr) auto}
-  .ck{grid-column:1/-1}
+  .ck{grid-column:1;grid-row:1}
+  .crow>:last-child{grid-column:2;grid-row:1}
+  .cv{grid-column:1/-1}
   .who{grid-template-columns:136px minmax(0,1fr);gap:18px}
   .trk{width:136px;height:136px}
   .ts{gap:10px}
@@ -1276,7 +1278,7 @@ r.style.zoom=z>1?String(z):"";window.ZOOM=z;r.style.setProperty("--vw",(w/z)+"px
     </div>
     <div class="clist">
       <div class="crow"><span class="ck">Telegram</span><div class="cv"><a href="https://t.me/HaiiroEver" target="_blank" rel="noopener" id="tg">@HaiiroEver</a><span class="pref"><span data-l="ru">предпочитаемый способ связи</span><span data-l="en">preferred</span></span></div><button type="button" class="copy" data-copy="@HaiiroEver" data-target="tg"><span class="c1"><span data-l="ru">Копировать</span><span data-l="en">Copy</span></span><span class="c2"><span data-l="ru">Скопировано</span><span data-l="en">Copied</span></span></button></div>
-      <div class="crow"><span class="ck"><span data-l="ru">Почта</span><span data-l="en">Email</span></span><div class="cv"><span id="mail">r-isxakov@mail.ru</span></div><button type="button" class="copy" data-copy="r-isxakov@mail.ru" data-target="mail"><span class="c1"><span data-l="ru">Копировать</span><span data-l="en">Copy</span></span><span class="c2"><span data-l="ru">Скопировано</span><span data-l="en">Copied</span></span></button></div>
+      <div class="crow"><span class="ck"><span data-l="ru">Почта</span><span data-l="en">Email</span></span><div class="cv"><span id="mail">raviliskhakov540@gmail.com</span></div><button type="button" class="copy" data-copy="raviliskhakov540@gmail.com" data-target="mail"><span class="c1"><span data-l="ru">Копировать</span><span data-l="en">Copy</span></span><span class="c2"><span data-l="ru">Скопировано</span><span data-l="en">Copied</span></span></button></div>
       <div class="crow"><span class="ck">GitHub</span><div class="cv"><a href="https://github.com/RavilIskhakov" target="_blank" rel="noopener">github.com/RavilIskhakov</a></div><span></span></div>
       <div class="crow"><span class="ck"><span data-l="ru">Город</span><span data-l="en">Based in</span></span><div class="cv"><span data-l="ru">Москва (GMT+3) · готов к удалёнке и переезду</span><span data-l="en">Moscow (GMT+3) · open to remote work and relocation</span></div><span></span></div>
     </div>
